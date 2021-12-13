@@ -1,7 +1,7 @@
 void main() {
   // CONDITIONALS
 
-  String color = 'blue';
+  String color = 'purple';
 
   if (color == 'blue') {
     //
@@ -15,13 +15,13 @@ void main() {
 
   // LOOPS
 
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i == 0.0; i++) {
     print(i);
     // break;
     // continue;
   }
 
-  int i = 0;
+  double i = 0.5;
   while (i < 5) {
     print(i);
     i++;
@@ -30,9 +30,10 @@ void main() {
   i = 0;
   do {
     print(i);
+    i++;
   } while (i < 5);
 
   // Assert
   var txt = 'good';
-  assert(txt != 'bad');
+  assert(txt == 'bam');
 }

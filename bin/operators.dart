@@ -14,7 +14,14 @@ void main() {
 
   // Assignment
   String? name;
-  name ??= 'Guest';
+  // alternately:
+  var z = name ?? 'guest';
+  // which is short for:
+  if (name == null) {
+    var z = 'guest';
+  } else {
+    var z = name;
+  }
 
   // Ternary
   String color = 'blue';
@@ -35,6 +42,5 @@ void main() {
     ..strokeWidth = 5.0;
 
   // Typecast
-  var number = 23 as String;
-  number is String; // true
+  print(23 as String);
 }
