@@ -9,6 +9,10 @@ void main(List<String> args) {
   print(x.blamo.runtimeType); // Foo
   print(x.blamy); // null
   print(x.blamy.runtimeType); // Null
+  print(null is Object); // null is only object for which this is false
+  print(Bar is Object); // Foo implicitly inherits from Object
+  print(null
+      is Object?); // Object? is the top class which Object and Null inherit from
 }
 
 class Foo {}
