@@ -3,17 +3,20 @@ void main() {
 
   list[0];
 
-  list.sublist(2, 5);
+  print(list.sublist(2, 5));
 
   var list2 = List.filled(50, 'hello');
 
-  list.length;
+  print(list.length);
   list.last;
   list.first;
 
   list.add(4); //push
-  list.removeLast(); //pop
+  print(list);
+  print(list.removeLast()); // returns 4
+  print(list);
   list.insert(1, 1000);
+  print(list);
 
   for (int n in list) {
     print(n);
