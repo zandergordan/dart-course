@@ -4,18 +4,18 @@ void main() {
     return '$number minus five equals ${number - 5}';
   }
 
-  takeFive(23);
+  print(takeFive(23));
 
   // Named parameters
   namedParams({required int a, int b = 5}) {
     return a - b;
   }
 
-  namedParams(a: 23, b: 10);
+  print(namedParams(a: 23, b: 10));
 
   // Arrow Function
   takeTen(int number) => '$number minus ten equals ${number - 10}';
-  takeTen(23);
+  print(takeTen(23));
 
   // First-class functions
   callIt(Function callback) {
@@ -24,7 +24,10 @@ void main() {
     return 'Result: $result';
   }
 
-  var cool = callIt;
+  zandersCallback({int a = 10, int b = 4}) => a - b;
+
+  var cool = callIt(zandersCallback);
+  print(cool);
 
   // Anonymous Function
   callIt(() => 'hola mundo!');
